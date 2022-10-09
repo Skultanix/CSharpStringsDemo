@@ -19,7 +19,16 @@
             var formattedNames = string.Join(", ", names);
             Console.WriteLine(formattedNames);
 
+            //Example showcasing standard string formatting vs. verbatim strings
+            var text = "Hi John\nLook into the following paths\nc:\\folder1\\folder2\nc:\\folder3\\folder4";
+            Console.WriteLine(text);
 
+            var theCoolerText = @"Hi John
+Look into the following paths
+c:\folder1\folder2
+c:\folder1\folder4";
+
+            Console.WriteLine(theCoolerText);
         }
     }
 }
